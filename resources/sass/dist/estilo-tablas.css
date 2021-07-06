@@ -1,0 +1,204 @@
+.tablas {
+  width: 100%;
+}
+.tablas .titulo-dispo {
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+.tablas .content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.tablas .content .content-table {
+  z-index: 5;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  border-radius: 25px 25px 0 0;
+  overflow: hidden;
+  position: relative;
+}
+.tablas .content .content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: center;
+}
+.tablas .content .content-table thead tr th {
+  padding: 10px 10px;
+}
+.tablas .content .content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+.tablas .content .content-table tbody tr td {
+  padding: 10px 12px;
+  text-align: center;
+  color: #000000;
+  font-size: 16px;
+  width: 80px;
+}
+.tablas .content .content-table tbody tr td button {
+  width: 100%;
+  cursor: pointer;
+}
+.tablas .content .content-table tbody tr td .btn-espera {
+  font-weight: bold;
+  color: #000000;
+  font-size: 16px;
+  border: 0;
+  background: transparent;
+  outline: none;
+  padding: 0;
+}
+.tablas .content .content-table tbody tr .tdwidth {
+  width: 50px;
+}
+.tablas .content .content-table tbody tr .horas {
+  word-break: break-all;
+  padding: 0;
+}
+.tablas .content .content-table tbody tr .Disponible {
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+}
+.tablas .content .content-table tbody tr .NoDisponible {
+  background: #d14529;
+  color: white;
+  font-weight: bold;
+}
+.tablas .content .content-table tbody tr .vencidoAmarillo {
+  font-weight: bold;
+  color: #000000;
+  background: #f8ef6e;
+}
+.tablas .content .content-table tbody tr .espera {
+  font-weight: bold;
+  background: #f8ef6e;
+}
+.tablas .content .content-table tbody tr .entregado {
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+}
+.tablas .content .content-table tbody tr .retirar {
+  background: #d14529;
+  color: white;
+  font-weight: bold;
+}
+.tablas .content .content-table tbody tr .retirado {
+  font-weight: bold;
+  background: #55acee;
+}
+.tablas .content .content-table tbody tr:nth-of-type(even) {
+  background: #f3f3f3;
+}
+.tablas .content .content-table tbody tr:nth-of-type(odd) {
+  background: #ffffff;
+}
+.tablas .content .content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+.tablas .content .content-table tbody tr:hover {
+  background: #55acee;
+}
+.tablas .content .content-table tbody tr:hover td {
+  color: #ffff;
+}
+.tablas .content .btn-add {
+  font-size: 40px;
+  color: #ffff;
+  cursor: pointer;
+}
+.tablas .content .btn-update,
+.tablas .content .btn-delete {
+  padding: 15px;
+  font-size: 20px;
+}
+.tablas .content .btn-update {
+  color: #393939;
+}
+.tablas .content .btn-delete {
+  color: #cf4429;
+  border: 0;
+  background: transparent;
+  outline: none;
+  padding: 0;
+}
+.tablas .content .btn-add:hover {
+  color: #2a2e57;
+}
+.tablas .content .btn-update:hover {
+  color: #ffff;
+}
+.tablas .content .btn-delete:hover {
+  color: #ffff;
+}
+
+.content-paginacion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.content-paginacion .content-ant-sig {
+  background: #2f3640;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 2px solid #009879;
+  border-radius: 25px;
+}
+.content-paginacion .content-ant-sig .ant-sig {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: ProDisplay;
+  font-size: 20px;
+  color: #e84118;
+}
+.content-paginacion .content-ant-sig .ant-sig:hover {
+  color: #ffff;
+}
+.content-paginacion .content-ant-sig .content-numeros {
+  padding: 3px;
+}
+.content-paginacion .content-ant-sig .content-numeros .link-num {
+  padding: 5px;
+  text-decoration: none;
+  font-family: ProDisplay;
+  font-size: 20px;
+  color: #ffff;
+  text-align: center;
+}
+.content-paginacion .content-ant-sig .content-numeros .link-num:hover {
+  color: #e84118;
+}
+
+.verCliente {
+  width: 100%;
+  text-align: left;
+  padding: 0;
+}
+.verCliente h1 {
+  font-size: 35px;
+  font-family: ProDisplay;
+  color: #000000;
+}
+.verCliente p {
+  font-size: 30px;
+  font-family: ProDisplay;
+  color: #000000;
+}
+
+.verServ {
+  width: 100%;
+  text-align: left;
+  padding: 0;
+}
+.verServ h1 {
+  font-size: 35px;
+  font-family: ProDisplay;
+  color: #000000;
+}

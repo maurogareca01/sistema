@@ -1,0 +1,622 @@
+@font-face {
+  font-family: "ProDisplay";
+  font-display: block;
+  src: url("../fuente/ProDisplay.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background: #222222;
+}
+
+body {
+  font-family: ProDisplay;
+  height: 100%;
+  background: #222222;
+}
+
+.subTitulo {
+  padding: 15px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 80px;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  background: #222222;
+}
+
+main {
+  background: #222222;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+}
+header .header {
+  position: relative;
+  width: 100%;
+  height: 65px;
+  background: #2a2e57;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header #usuario {
+  position: absolute;
+  left: 65px;
+  color: #ffffff;
+  text-align: right;
+  border: 2px solid #009879;
+  border-radius: 10px;
+  padding: 3px 15px;
+}
+header .header #usuario h1 {
+  font-weight: bold;
+  font-size: 2em;
+}
+header .header #h1 {
+  width: 40%;
+  text-align: center;
+}
+header .header #h1 a {
+  text-decoration-line: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2em;
+}
+header .header #login {
+  position: absolute;
+  right: 50px;
+  width: auto;
+  color: #ffffff;
+  border: 2px solid #009879;
+  border-radius: 10px;
+  padding: 3px 15px;
+}
+header .header #login a {
+  text-decoration-line: none;
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: bold;
+}
+header .header #login:hover {
+  background: #009879;
+  cursor: pointer;
+}
+header .header #hh {
+  visibility: hidden;
+  position: fixed;
+  right: 10px;
+  width: 60px;
+  z-index: 500;
+  height: 65px;
+  cursor: pointer;
+  line-height: 65px;
+}
+header .header #hh a {
+  text-decoration-line: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 42px;
+  text-align: center;
+}
+header .navigation {
+  position: fixed;
+  top: 65px;
+  left: -59px;
+  width: 60px;
+  height: 100%;
+  background: #2a2e57;
+  transition: 0.5s;
+  overflow: hidden;
+  z-index: 124;
+  font-family: ProDisplay;
+}
+header .navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header .navigation ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+}
+header .navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+}
+header .navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+header .navigation ul li a .icon i {
+  line-height: 60px;
+  font-size: 25px;
+}
+header .navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 22px;
+  text-align: start;
+  white-space: nowrap;
+}
+header .navigation ul li a select {
+  width: auto;
+  padding: 0 10px;
+  border: 0;
+  background: transparent;
+  resize: none;
+  font-size: 22px;
+  font-family: ProDisplay;
+  color: #ffffff;
+}
+header .navigation ul li a select option {
+  font-family: ProDisplay;
+  font-size: 20px;
+  color: #000;
+}
+header .navigation ul li a select:focus {
+  outline: none;
+}
+header .navigation ul li a select:hover {
+  cursor: pointer;
+}
+header .navigation ul li a .alert-valor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  width: 100%;
+}
+header .navigation ul li a .alert-valor .btn-color {
+  font-weight: bold;
+  font-family: ProDisplay;
+  font-size: 25px;
+  line-height: 60px;
+  border: 0;
+  background: transparent;
+  outline: none;
+  transition: all 0.2s;
+  padding: 0;
+}
+header .navigation ul li a .alert-valor .SiHayAlertas {
+  color: #c94228;
+}
+header .navigation ul li a .alert-valor .NoHayAlertas {
+  color: #ffffff;
+}
+header .navigation ul li a .alert-valor button:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+header .navigation ul li .fechas {
+  position: relative;
+  display: block;
+  width: auto;
+  height: 150px;
+  visibility: hidden;
+  margin-left: 20px;
+  font-family: ProDisplay;
+}
+header .navigation ul li .fechas input {
+  border: 0;
+  height: 30px;
+  font-family: ProDisplay;
+  font-size: 18px;
+  resize: none;
+  border-radius: 10px;
+}
+header .navigation ul li .fechas input:focus {
+  outline: none;
+}
+header .navigation ul li .fechas div {
+  padding: 3px;
+}
+header .navigation ul li .fechas div p {
+  font-family: ProDisplay;
+  font-size: 20px;
+  color: #ffffff;
+}
+header .navigation ul .li-logout {
+  display: none;
+}
+header li:nth-child(1):hover,
+header li:nth-child(2):hover,
+header li:nth-child(3):hover,
+header li:nth-child(4):hover,
+header li:nth-child(5):hover,
+header li:nth-child(6):hover,
+header li:nth-child(7):hover,
+header li:nth-child(8):hover,
+header li:nth-child(9):hover {
+  background: #009879;
+}
+header .noHover:hover select,
+header .noHover:hover .icon,
+header .noHover:hover .alert-valor {
+  background: #009879;
+}
+header .noHover:hover select option {
+  background: #ffffff;
+}
+
+.navigation:hover,
+.navigation.active {
+  width: 300px;
+  left: 0;
+}
+.navigation:hover ul li .fechas,
+.navigation.active ul li .fechas {
+  visibility: inherit;
+}
+
+.toggle {
+  position: fixed;
+  top: 0;
+  width: 60px;
+  z-index: 500;
+  height: 65px;
+  background: #2a2e57;
+  cursor: pointer;
+  display: flex;
+}
+.toggle .toggle-menu {
+  height: 65px;
+  width: 60px;
+}
+.toggle .toggle-menu i {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 65px;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+}
+.toggle #usuario {
+  visibility: hidden;
+}
+
+.toggle:hover {
+  background: #009879;
+}
+
+.panel {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.panel .grid-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto;
+}
+.panel .grid-container .grid-item {
+  background: #2f3640;
+  border: 3px solid #009879;
+  width: 300px;
+  height: 250px;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+}
+.panel .grid-container .grid-item .icono {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+}
+.panel .grid-container .grid-item .icono i {
+  font-size: 3em;
+  color: #ffffff;
+}
+.panel .grid-container .grid-item .icono .val-renta {
+  color: #ffff;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-weight: bold;
+}
+.panel .grid-container .grid-item .icono-titulo {
+  padding: 5px 0;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  justify-content: center;
+  font-family: ProDisplay;
+  font-weight: bold;
+}
+.panel .grid-container .grid-item:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  background: #2a2e57;
+}
+.panel .grid-container .grid-item:hover .icono i {
+  color: #ffffff;
+}
+.panel .grid-container .grid-item:hover .icono-titulo {
+  color: #e84118;
+}
+.panel .grid-container-logistica {
+  height: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto;
+}
+.panel .grid-container-logistica .grid-item {
+  background: #2f3640;
+  border: 3px solid #009879;
+  width: 300px;
+  height: 250px;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+}
+.panel .grid-container-logistica .grid-item .icono {
+  height: 70%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.panel .grid-container-logistica .grid-item .icono i {
+  font-size: 3em;
+  color: #ffffff;
+}
+.panel .grid-container-logistica .grid-item .icono .val-renta {
+  color: #ffff;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 8px;
+  left: -5px;
+  font-weight: bold;
+}
+.panel .grid-container-logistica .grid-item .icono-titulo {
+  height: 30%;
+  display: flex;
+  align-items: flex-end;
+  color: #ffffff;
+  justify-content: center;
+  font-family: ProDisplay;
+  font-weight: bold;
+}
+.panel .grid-container-logistica .grid-item:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  background: #2a2e57;
+}
+.panel .grid-container-logistica .grid-item:hover .icono i {
+  color: #ffffff;
+}
+.panel .grid-container-logistica .grid-item:hover .icono-titulo {
+  color: #e84118;
+}
+
+.btn-verClien {
+  outline: none;
+  height: 20px;
+  position: relative;
+  top: -2px;
+  margin-left: 15px;
+  padding: 0 0 3px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 479px) {
+  header .header {
+    position: fixed;
+    z-index: 123;
+    background: -moz-linear-gradient(top, #222222 20%, rgba(41, 41, 54, 0) 100%);
+    background: -webkit-linear-gradient(top, #222222 20%, rgba(41, 41, 54, 0) 100%);
+    background: linear-gradient(to top(41, 41, 54, 1) 20%, rgba(41, 41, 54, 0) 100%);
+  }
+  header .header #usuario {
+    visibility: hidden;
+  }
+  header .header #h1 {
+    visibility: hidden;
+  }
+  header .header #login {
+    visibility: hidden;
+  }
+  header .header #hh {
+    visibility: visible;
+  }
+  header .navigation.active {
+    width: 320px;
+  }
+  header .toggle {
+    background: transparent;
+  }
+  header .toggle .toggle-menu i {
+    font-size: 40px;
+  }
+  header .toggle:hover {
+    background: transparent;
+  }
+  header .toggle.active {
+    background: #2a2e57;
+    width: 320px;
+    left: 0;
+  }
+  header .toggle.active #usuario {
+    visibility: visible;
+    width: 100%;
+    overflow: hidden;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  header .toggle.active #usuario .name {
+    border: 2px solid #009879;
+    border-radius: 10px;
+    padding: 0 10px;
+  }
+  header .toggle.active .toggle-menu i {
+    height: 65px;
+    width: 60px;
+    color: #009879;
+  }
+  header .navigation {
+    height: 100%;
+  }
+  header .navigation ul {
+    height: calc(100vh - 65px);
+    overflow-y: auto;
+  }
+  header .navigation ul .li-logout {
+    display: block;
+  }
+
+  .subTitulo {
+    font-size: 25px;
+  }
+
+  .panel .grid-container {
+    width: 60%;
+    grid-gap: 20px;
+    grid-template-columns: auto;
+  }
+  .panel .grid-container .grid-item {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    font-size: calc(10px + 1.5vw);
+  }
+  .panel .grid-container .grid-item .icono {
+    font-size: calc(10px + 1vw);
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .subTitulo {
+    font-size: 30px;
+  }
+
+  header {
+    float: left;
+  }
+  header .header #usuario h1 {
+    font-size: calc(12px + 1.5vw);
+  }
+  header .header #h1 {
+    text-align: right;
+    position: relative;
+  }
+  header .header #h1 a {
+    font-size: calc(12px + 1.5vw);
+  }
+  header .header #login {
+    position: absolute;
+    right: 10px;
+  }
+  header .header #login a {
+    font-size: calc(12px + 1.5vw);
+  }
+  header .navigation {
+    height: 100%;
+  }
+  header .navigation ul {
+    height: calc(100vh - 65px);
+    overflow-y: auto;
+  }
+
+  .panel .grid-container .grid-item {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    font-size: calc(8px + 1.5vw);
+  }
+  .panel .grid-container .grid-item .icono {
+    font-size: calc(5px + 1vw);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .subTitulo {
+    font-size: 28px;
+  }
+
+  header .header #usuario h1 {
+    font-size: 28px;
+  }
+  header .header #h1 {
+    position: relative;
+    left: 30px;
+  }
+  header .header #h1 a {
+    font-size: 28px;
+  }
+  header .header #login {
+    position: absolute;
+    right: 10px;
+  }
+  header .header #login a {
+    font-size: 28px;
+  }
+  header .navigation {
+    height: 100%;
+  }
+  header .navigation ul {
+    height: calc(100vh - 65px);
+    overflow-y: auto;
+  }
+
+  .panel .grid-container .grid-item {
+    width: 100%;
+    max-width: 250px;
+    min-width: auto;
+    max-height: 250px;
+    min-height: auto;
+    font-size: 25px;
+  }
+  .panel .grid-container .grid-item .icono {
+    font-size: 19px;
+  }
+}
+
+/*# sourceMappingURL=estilo-nav.css.map */

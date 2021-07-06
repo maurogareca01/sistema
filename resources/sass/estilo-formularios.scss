@@ -1,0 +1,550 @@
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    z-index: 9999999999999999;
+    .popup {
+        //background: #f8f8f8;
+        //box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        transition: 0.5s ease all;
+        transform: scale(0.7);
+        opacity: 0;
+        h1 {
+            padding: 10px 3px;
+            font-weight: bold;
+            font-size: 40px;
+            color: #000;
+        }
+        .btn-cerrar-popup {
+            position: absolute;
+            right: 20px;
+            width: 36px;
+            font-size: 35px;
+            line-height: 16px;
+            display: block;
+            text-align: right;
+            color: #bbbbbb;
+            cursor: pointer;
+        }
+        .btn-cerrar-popup:hover {
+            color: rgb(160, 31, 31);
+        }
+        .btn-agregar {
+            width: 200px;
+            background: #1f53c5;
+            border: none;
+            padding: 12px;
+            color: #ffffff;
+            margin: 16px 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn-agregar:hover {
+            background: green;
+        }
+    }
+    .popup.active {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+//////////////////////////////////////
+.content-formulario {
+    //background: red;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    position: relative;
+    .contact-wrapper {
+        //background: red;
+        width: 100%;
+        height: 100%;
+        border-radius: 27px;
+        .modifica-form {
+            background: #f3f3f3;
+            border-radius: 25px;
+            h3 {
+                color: #000000;
+                padding: 3px;
+                font-size: 26px;
+                text-align: center;
+            }
+            .span-Dispo {
+                display: grid;
+                grid-template: 20px / 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas: 'error error error error error error ';
+                text-align: center;
+                height: 102px;
+                padding: 5px;
+                border-bottom: 2px solid #1f53c5;
+                font-size: 18px;
+                i {
+                    font-size: 25px;
+                    width: 100%;
+                }
+                .fa-check {
+                    color: #28a745;
+                }
+                .fa-times {
+                    color: rgb(160, 31, 31);
+                }
+                .fa-ban {
+                    color: #1f53c5;
+                }
+                .span-barra {
+                    border-right: 1px solid black;
+                }
+                span {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                select {
+                    width: 100%;
+                    height: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 0px;
+                    background: none;
+                    border: none;
+                    color: #000000;
+                    resize: none;
+                    font-size: 20px;
+                    .option-En {
+                        background: #1f53c5;
+                        color: #ffffff;
+                    }
+                    .option-Disponible {
+                        background: #28a745;
+                        color: #ffffff;
+                    }
+                    .option-Reparacion,
+                    .option-Revisar,
+                    .option-Reservado,
+                    .option-Por {
+                        background: #f8ef6e;
+                    }
+                    .option-NoUsa {
+                        background: #be60a6;
+                        color: #ffffff;
+                    }
+                }
+            }
+            .btn-stock {
+                font-size: 26px;
+                font-style: oblique;
+                background-color: rgb(187, 14, 14);
+                color: #ffffff;
+                text-align: center;
+                font-weight: bold;
+                line-height: 45px;
+            }
+        }
+        .modifica-form form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .alta form {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .alta4 form {
+            display: grid;
+            grid-template-areas: 'a1 a2 a2 a3';
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            .secc-a {
+                grid-area: a1;
+            }
+            .secc-b {
+                grid-area: a2;
+            }
+            .secc-c {
+                grid-area: a3;
+            }
+        }
+        .modifica-form form p {
+            margin: 0;
+            padding: 5px;
+            color: #000000;
+            font-size: 18px;
+            .error {
+                color: red;
+                font-size: 18px;
+            }
+            .error-span {
+                color: red;
+                font-size: 18px;
+                grid-area: error;
+            }
+        }
+        .modifica-form form .btn-verModificar,
+        .modifica-form form input,
+        .modifica-form form textarea,
+        .modifica-form form select {
+            width: 100%;
+            padding: .7em;
+            background: none;
+            border: none;
+            border-bottom: 2px solid #1f53c5;
+            color: #000000;
+            background: transparent;
+            resize: none;
+            font-size: 20px;
+            height: 76px;
+            font-family: 'ProDisplay';
+        }
+        .modifica-form form input[type='checkbox'],
+        .modifica-form form input[type='radio'] {
+            width: 40px;
+            padding: 0px;
+            height: 20px;
+        }
+        /*
+        .modifica-form form .alto-concen {
+            height: 100%;
+            label {
+                padding: 1px 0px;
+            }
+            label:nth-child(2):hover,
+            label:nth-child(3):hover,
+            label:nth-child(4):hover {
+                cursor: pointer;
+                color: #1f53c5;
+            }
+            label:nth-child(4) {
+                padding-bottom: 6px;
+                border-bottom: 2px solid #1f53c5;
+            }
+        }
+        .modifica-form form .concen {
+            display: flex;
+            align-items: center;
+            height: auto;
+        }*/
+        .modifica-form form button:disabled {
+            background: #ccc;
+        }
+        .modifica-form form button:disabled:hover {
+            background: red;
+        }
+        #medioPagoLabel {
+            width: 49%;
+            display: flex;
+        }
+        #medioPago {
+            width: 49%;
+        }
+        .modifica-form form .btn-verModificar {
+            background: #1f53c5;
+            color: #ffff;
+            border: 0;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 1em;
+        }
+        .modifica-form form .btn-verModificar:hover,
+        .modifica-form form .btn-verModificar:focus {
+            background: #28a745;
+            color: #ffff;
+        }
+        .modifica-form form input:focus {
+            outline: none;
+        }
+        .modifica-form form textarea:focus {
+            outline: none;
+        }
+        .modifica-form form select:focus {
+            outline: none;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+        .modifica-form .cambio {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    }
+    .contact-wrapper>* {
+        padding: 1em;
+    }
+}
+
+.content-alta {
+    width: 980px;
+    // background:red; 
+}
+
+.content-alta4 {
+    width: 98%;
+    // background:red; 
+}
+
+////BUSCADOR DE PANEL "BUSAR ALQUILER"//////
+.content-formulario-busca {
+    width: 600px;
+    height: 100%;
+    background: #2f3640;
+    border-radius: 25px;
+    border: 2px solid #009879;
+}
+
+#popup-buscar {
+    background: transparent;
+}
+
+#popup-renta {
+    background: transparent;
+}
+
+.contact-wrapper-busca {
+    background: transparent;
+    height: 100%;
+    .btn-cerrar-popup-busca {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 36px;
+        font-size: 43px;
+        display: block;
+        color: #bbbbbb;
+        cursor: pointer;
+    }
+    .btn-cerrar-popup-busca:hover {
+        color: rgb(160, 31, 31);
+    }
+}
+
+.contact-wrapper-busca>* {
+    padding: 2.3em;
+}
+
+.busca {
+    display: flex;
+    justify-content: center;
+    .box {
+        h1 {
+            color: #ffffff;
+            font-weight: bold;
+            text-align: left;
+        }
+        .search-busca {
+            background: #2a2e57;
+            color: #ffffff;
+            width: 340px;
+            height: 50px;
+            border: 2px solid #009879;
+            outline: none;
+            padding: 0 25px;
+            font-size: 30px;
+            border-radius: 25px 0 0 25px;
+        }
+        .buscar {
+            position: relative;
+            border: 2px solid #009879;
+            left: -5px;
+            border-radius: 0 25px 25px 0;
+            width: 80px;
+            padding: 0 25px;
+            height: 50px;
+            background: #2a2e57;
+            //background: #2f3640;
+            color: #e84118;
+            font-size: 30px;
+            outline: none;
+            text-align: center;
+            cursor: pointer;
+        }
+         ::-webkit-input-placeholder {
+            color: #ffff;
+            font-family: ProDisplay;
+            font-style: italic;
+            font-size: 15px;
+        }
+        .buscar:hover {
+            color: #ffff;
+        }
+        .search-renta {
+            background: #2a2e57;
+            position: relative;
+            color: #ffffff;
+            width: 340px;
+            height: 50px;
+            border: 2px solid #009879;
+            outline: none;
+            padding: 0 25px;
+            font-size: 30px;
+            border-radius: 25px 0 0 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .renta {
+            position: relative;
+            border: 2px solid #009879;
+            left: -5px;
+            border-radius: 0 25px 25px 0;
+            width: 80px;
+            padding: 0 25px;
+            height: 50px;
+            background: #2a2e57;
+            color: #e84118;
+            font-size: 30px;
+            outline: none;
+            text-align: center;
+            cursor: pointer;
+        }
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .renta:hover {
+            color: #ffff;
+        }
+    }
+}
+
+////////////////////////////////////RESPONSIVE/////////////////////////////////////////////
+////// 
+@media only screen and (max-width: 479px) {
+    .overlay {
+        .popup {
+            max-height: 80%;
+            width: 90%;
+            height: auto;
+            overflow-y: auto;
+            .btn-cerrar-popup {
+                color: rgb(160, 31, 31);
+            }
+        }
+    }
+    .content-formulario {
+        width: 90%;
+        .contact-wrapper {
+            .modifica-form {
+                h1 {
+                    width: 80%;
+                    font-size: 25px;
+                }
+                form {
+                    display: block;
+                    grid-template-columns: auto;
+                    grid-template-areas: none;
+                    p {
+                        min-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .content-formulario-busca {
+        width: 100%;
+        .box {
+            .search-busca {
+                width: calc(100% - 85px);
+            }
+            .search-renta {
+                width: calc(100% - 85px);
+            }
+        }
+    }
+}
+
+/////// 
+/////// 
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+    .overlay {
+        .popup {
+            max-height: 80%;
+            width: 90%;
+            height: auto;
+            overflow-y: auto;
+            .btn-cerrar-popup {
+                right: -40px;
+                color: rgb(160, 31, 31);
+            }
+        }
+    }
+    .content-formulario {
+        width: 90%;
+        .contact-wrapper {
+            .modifica-form {
+                form {
+                    display: block;
+                }
+            }
+        }
+    }
+    .content-formulario-busca {
+        width: 100%;
+        .box {
+            .search-busca {
+                width: calc(100% - 85px);
+            }
+            .search-renta {
+                width: calc(100% - 85px);
+            }
+        }
+    }
+}
+
+////// 
+/////// 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .overlay {
+        .popup {
+            max-height: 80%;
+            width: 90%;
+            height: auto;
+            overflow-y: auto;
+            .btn-cerrar-popup {
+                right: -40px;
+                color: rgb(160, 31, 31);
+            }
+        }
+    }
+    .content-formulario-busca {
+        width: 100%;
+        .box {
+            .search-busca {
+                width: calc(100% - 85px);
+            }
+            .search-renta {
+                width: calc(100% - 85px);
+            }
+        }
+    }
+    .content-formulario {
+        width: 90%;
+        .contact-wrapper {
+            .modifica-form {
+                form {
+                    p {
+                        min-width: 100%;
+                    }
+                    display: grid;
+                    grid-template-areas: 'a1' 'a2''a3';
+                    grid-template-columns: auto auto;
+                }
+            }
+        }
+    }
+}

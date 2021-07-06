@@ -1,0 +1,515 @@
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  z-index: 10000000000000000;
+}
+.overlay .popup {
+  border-radius: 5px;
+  transition: 0.5s ease all;
+  transform: scale(0.7);
+  opacity: 0;
+}
+.overlay .popup h1 {
+  padding: 10px 3px;
+  font-weight: bold;
+  font-size: 40px;
+  color: #000;
+}
+.overlay .popup .btn-cerrar-popup {
+  position: absolute;
+  right: 20px;
+  width: 36px;
+  font-size: 35px;
+  line-height: 16px;
+  display: block;
+  text-align: right;
+  color: #bbbbbb;
+  cursor: pointer;
+}
+.overlay .popup .btn-cerrar-popup:hover {
+  color: #a01f1f;
+}
+.overlay .popup .btn-agregar {
+  width: 200px;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: #ffffff;
+  margin: 16px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+.overlay .popup .btn-agregar:hover {
+  background: green;
+}
+.overlay .popup.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.overlay.active {
+  visibility: visible;
+}
+
+.content-formulario {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  position: relative;
+}
+.content-formulario .contact-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 27px;
+  /*
+  .modifica-form form .alto-concen {
+      height: 100%;
+      label {
+          padding: 1px 0px;
+      }
+      label:nth-child(2):hover,
+      label:nth-child(3):hover,
+      label:nth-child(4):hover {
+          cursor: pointer;
+          color: #1f53c5;
+      }
+      label:nth-child(4) {
+          padding-bottom: 6px;
+          border-bottom: 2px solid #1f53c5;
+      }
+  }
+  .modifica-form form .concen {
+      display: flex;
+      align-items: center;
+      height: auto;
+  }*/
+  /* Firefox */
+}
+.content-formulario .contact-wrapper .modifica-form {
+  background: #f3f3f3;
+  border-radius: 25px;
+}
+.content-formulario .contact-wrapper .modifica-form h3 {
+  color: #000000;
+  padding: 3px;
+  font-size: 26px;
+  text-align: center;
+}
+.content-formulario .contact-wrapper .modifica-form .span-Dispo {
+  display: grid;
+  grid-template: 20px/1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "error error error error error error ";
+  text-align: center;
+  height: 102px;
+  padding: 5px;
+  border-bottom: 2px solid #1f53c5;
+  font-size: 18px;
+}
+.content-formulario .contact-wrapper .modifica-form .span-Dispo i {
+  font-size: 25px;
+  width: 100%;
+}
+.content-formulario .contact-wrapper .modifica-form .span-Dispo .fa-check {
+  color: #28a745;
+}
+.content-formulario .contact-wrapper .modifica-form .span-Dispo .fa-times {
+  color: #a01f1f;
+}
+.content-formulario .contact-wrapper .modifica-form .span-Dispo .fa-ban {
+  color: #1f53c5;
+}
+.content-formulario .contact-wrapper .modifica-form .span-Dispo .span-barra {
+  border-right: 1px solid black;
+}
+.content-formulario .contact-wrapper .modifica-form .span-Dispo span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-formulario .contact-wrapper .modifica-form .span-Dispo select {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  background: none;
+  border: none;
+  color: #000000;
+  resize: none;
+  font-size: 20px;
+}
+.content-formulario .contact-wrapper .modifica-form .span-Dispo select .option-En {
+  background: #1f53c5;
+  color: #ffffff;
+}
+.content-formulario .contact-wrapper .modifica-form .span-Dispo select .option-Disponible {
+  background: #28a745;
+  color: #ffffff;
+}
+.content-formulario .contact-wrapper .modifica-form .span-Dispo select .option-Reparacion,
+.content-formulario .contact-wrapper .modifica-form .span-Dispo select .option-Revisar,
+.content-formulario .contact-wrapper .modifica-form .span-Dispo select .option-Reservado,
+.content-formulario .contact-wrapper .modifica-form .span-Dispo select .option-Por {
+  background: #f8ef6e;
+}
+.content-formulario .contact-wrapper .modifica-form .span-Dispo select .option-NoUsa {
+  background: #be60a6;
+  color: #ffffff;
+}
+.content-formulario .contact-wrapper .modifica-form .btn-stock {
+  font-size: 26px;
+  font-style: oblique;
+  background-color: #bb0e0e;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  line-height: 45px;
+}
+.content-formulario .contact-wrapper .modifica-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.content-formulario .contact-wrapper .alta form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.content-formulario .contact-wrapper .alta4 form {
+  display: grid;
+  grid-template-areas: "a1 a2 a2 a3";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.content-formulario .contact-wrapper .alta4 form .secc-a {
+  grid-area: a1;
+}
+.content-formulario .contact-wrapper .alta4 form .secc-b {
+  grid-area: a2;
+}
+.content-formulario .contact-wrapper .alta4 form .secc-c {
+  grid-area: a3;
+}
+.content-formulario .contact-wrapper .modifica-form form p {
+  margin: 0;
+  padding: 5px;
+  color: #000000;
+  font-size: 18px;
+}
+.content-formulario .contact-wrapper .modifica-form form p .error {
+  color: red;
+  font-size: 18px;
+}
+.content-formulario .contact-wrapper .modifica-form form p .error-span {
+  color: red;
+  font-size: 18px;
+  grid-area: error;
+}
+.content-formulario .contact-wrapper .modifica-form form .btn-verModificar,
+.content-formulario .contact-wrapper .modifica-form form input,
+.content-formulario .contact-wrapper .modifica-form form textarea,
+.content-formulario .contact-wrapper .modifica-form form select {
+  width: 100%;
+  padding: 0.7em;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #1f53c5;
+  color: #000000;
+  background: transparent;
+  resize: none;
+  font-size: 20px;
+  height: 76px;
+  font-family: "ProDisplay";
+}
+.content-formulario .contact-wrapper .modifica-form form input[type=checkbox],
+.content-formulario .contact-wrapper .modifica-form form input[type=radio] {
+  width: 40px;
+  padding: 0px;
+  height: 20px;
+}
+.content-formulario .contact-wrapper .modifica-form form button:disabled {
+  background: #ccc;
+}
+.content-formulario .contact-wrapper .modifica-form form button:disabled:hover {
+  background: red;
+}
+.content-formulario .contact-wrapper #medioPagoLabel {
+  width: 49%;
+  display: flex;
+}
+.content-formulario .contact-wrapper #medioPago {
+  width: 49%;
+}
+.content-formulario .contact-wrapper .modifica-form form .btn-verModificar {
+  background: #1f53c5;
+  color: #ffff;
+  border: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 1em;
+}
+.content-formulario .contact-wrapper .modifica-form form .btn-verModificar:hover,
+.content-formulario .contact-wrapper .modifica-form form .btn-verModificar:focus {
+  background: #28a745;
+  color: #ffff;
+}
+.content-formulario .contact-wrapper .modifica-form form input:focus {
+  outline: none;
+}
+.content-formulario .contact-wrapper .modifica-form form textarea:focus {
+  outline: none;
+}
+.content-formulario .contact-wrapper .modifica-form form select:focus {
+  outline: none;
+}
+.content-formulario .contact-wrapper input::-webkit-outer-spin-button,
+.content-formulario .contact-wrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.content-formulario .contact-wrapper input[type=number] {
+  -moz-appearance: textfield;
+}
+.content-formulario .contact-wrapper .modifica-form .cambio {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.content-formulario .contact-wrapper > * {
+  padding: 1em;
+}
+
+.content-alta {
+  width: 980px;
+}
+
+.content-alta4 {
+  width: 98%;
+}
+
+.content-formulario-busca {
+  width: 600px;
+  height: 100%;
+  background: #2f3640;
+  border-radius: 25px;
+  border: 2px solid #009879;
+}
+
+#popup-buscar {
+  background: transparent;
+}
+
+#popup-renta {
+  background: transparent;
+}
+
+.contact-wrapper-busca {
+  background: transparent;
+  height: 100%;
+}
+.contact-wrapper-busca .btn-cerrar-popup-busca {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 36px;
+  font-size: 43px;
+  display: block;
+  color: #bbbbbb;
+  cursor: pointer;
+}
+.contact-wrapper-busca .btn-cerrar-popup-busca:hover {
+  color: #a01f1f;
+}
+
+.contact-wrapper-busca > * {
+  padding: 2.3em;
+}
+
+.busca {
+  display: flex;
+  justify-content: center;
+}
+.busca .box h1 {
+  color: #ffffff;
+  font-weight: bold;
+  text-align: left;
+}
+.busca .box .search-busca {
+  background: #2a2e57;
+  color: #ffffff;
+  width: 340px;
+  height: 50px;
+  border: 2px solid #009879;
+  outline: none;
+  padding: 0 25px;
+  font-size: 30px;
+  border-radius: 25px 0 0 25px;
+}
+.busca .box .buscar {
+  position: relative;
+  border: 2px solid #009879;
+  left: -5px;
+  border-radius: 0 25px 25px 0;
+  width: 80px;
+  padding: 0 25px;
+  height: 50px;
+  background: #2a2e57;
+  color: #e84118;
+  font-size: 30px;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+}
+.busca .box ::-webkit-input-placeholder {
+  color: #ffff;
+  font-family: ProDisplay;
+  font-style: italic;
+  font-size: 15px;
+}
+.busca .box .buscar:hover {
+  color: #ffff;
+}
+.busca .box .search-renta {
+  background: #2a2e57;
+  position: relative;
+  color: #ffffff;
+  width: 340px;
+  height: 50px;
+  border: 2px solid #009879;
+  outline: none;
+  padding: 0 25px;
+  font-size: 30px;
+  border-radius: 25px 0 0 25px;
+  font-weight: bold;
+  text-align: center;
+}
+.busca .box .renta {
+  position: relative;
+  border: 2px solid #009879;
+  left: -5px;
+  border-radius: 0 25px 25px 0;
+  width: 80px;
+  padding: 0 25px;
+  height: 50px;
+  background: #2a2e57;
+  color: #e84118;
+  font-size: 30px;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+}
+.busca .box input[type=number]::-webkit-inner-spin-button,
+.busca .box input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.busca .box .renta:hover {
+  color: #ffff;
+}
+
+@media only screen and (max-width: 479px) {
+  .overlay .popup {
+    max-height: 80%;
+    width: 90%;
+    height: auto;
+    overflow-y: auto;
+  }
+  .overlay .popup .btn-cerrar-popup {
+    color: #a01f1f;
+  }
+
+  .content-formulario {
+    width: 90%;
+  }
+  .content-formulario .contact-wrapper .modifica-form h1 {
+    width: 80%;
+    font-size: 25px;
+  }
+  .content-formulario .contact-wrapper .modifica-form form {
+    display: block;
+    grid-template-columns: auto;
+    grid-template-areas: none;
+  }
+  .content-formulario .contact-wrapper .modifica-form form p {
+    min-width: 100%;
+  }
+
+  .content-formulario-busca {
+    width: 100%;
+  }
+  .content-formulario-busca .box .search-busca {
+    width: calc(100% - 85px);
+  }
+  .content-formulario-busca .box .search-renta {
+    width: calc(100% - 85px);
+  }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+  .overlay .popup {
+    max-height: 80%;
+    width: 90%;
+    height: auto;
+    overflow-y: auto;
+  }
+  .overlay .popup .btn-cerrar-popup {
+    right: -40px;
+    color: #a01f1f;
+  }
+
+  .content-formulario {
+    width: 90%;
+  }
+  .content-formulario .contact-wrapper .modifica-form form {
+    display: block;
+  }
+
+  .content-formulario-busca {
+    width: 100%;
+  }
+  .content-formulario-busca .box .search-busca {
+    width: calc(100% - 85px);
+  }
+  .content-formulario-busca .box .search-renta {
+    width: calc(100% - 85px);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .overlay .popup {
+    max-height: 80%;
+    width: 90%;
+    height: auto;
+    overflow-y: auto;
+  }
+  .overlay .popup .btn-cerrar-popup {
+    right: -40px;
+    color: #a01f1f;
+  }
+
+  .content-formulario-busca {
+    width: 100%;
+  }
+  .content-formulario-busca .box .search-busca {
+    width: calc(100% - 85px);
+  }
+  .content-formulario-busca .box .search-renta {
+    width: calc(100% - 85px);
+  }
+
+  .content-formulario {
+    width: 90%;
+  }
+  .content-formulario .contact-wrapper .modifica-form form {
+    display: grid;
+    grid-template-areas: "a1" "a2" "a3";
+    grid-template-columns: auto auto;
+  }
+  .content-formulario .contact-wrapper .modifica-form form p {
+    min-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=estilo-formularios.css.map */

@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.remito {
+    width: 100%;
+    height: 1050px;
+    .frenteR1 {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        img {
+            position: absolute;
+            top: -70px;
+            width: 100%;
+        }
+        #logo1 {
+            position: absolute;
+            top: 40px;
+            left: 295px;
+            width: 200px;
+        }
+        .frenteDatos {
+            position: relative;
+            top: 125px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 700px;
+            height: auto;
+            font-size: 18px;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            .frenteDatos-izq {
+                float: left;
+                width: 50%;
+                height: auto;
+            }
+            .frenteDatos-der {
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+    .frenteDatos-2 {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+        height: 30px;
+        top: -12px;
+        z-index: 10;
+        background: #444e93;
+        color: #ffff;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .frenteDatos-3 {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+        height: auto;
+        font-size: 18px;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        .frenteDatos-3-izq {
+            float: left;
+            width: 50%;
+            text-align: left;
+            height: auto;
+        }
+        .frenteDatos-3-der {
+            width: auto;
+            text-align: right;
+            height: auto;
+        }
+    }
+    .frenteDatos-4 {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+        height: 80px;
+        font-size: 16px;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+        .frenteDatos-4-izq {
+            float: left;
+            width: 50%;
+            text-align: left;
+            height: auto;
+        }
+        .frenteDatos-4-der {
+            width: auto;
+            text-align: left;
+            height: auto;
+        }
+    }
+    .frente-tabla {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+        font-size: 14px;
+        .tabla {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            width: 700px;
+        }
+        table,
+        th,
+        td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 3px;
+        }
+    }
+    .frenteDatos-5 {
+        position: absolute;
+        bottom: 100px;
+        left: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+        height: 60px;
+        font-size: 18px;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        .frenteDatos-5-izq {
+            float: left;
+            text-align: left;
+        }
+        .frenteDatos-5-der {
+            text-align: right;
+        }
+        #logo2 {
+            position: absolute;
+            bottom: 0px;
+            left: 240px;
+            width: 100px;
+        }
+    }
+}
+
+.presupuesto {
+    width: 100%;
+    height: 1050px;
+    .frenteP {
+        z-index: 12;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        img {
+            top: -70px;
+            width: 100%;
+        }
+        #logo3 {
+            position: absolute;
+            top: 40px;
+            left: 70px;
+            width: 250px;
+        }
+        .caja-presu {
+            position: absolute;
+            top: 100px;
+            right: 50px;
+            width: 260px;
+            height: auto;
+            z-index: 1;
+            background: #444e93;
+            color: #ffff;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 50%;
+            text-align: center;
+        }
+    }
+    .frenteP2 {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+        height: 170px;
+        font-size: 14px;
+        color: #002060;
+        font-weight: bold;
+        .frenteP2-izq {
+            float: left;
+            width: 50%;
+            height: auto;
+            padding-left: 35px;
+            padding-top: 40px;
+            line-height: 30px;
+        }
+        .frenteP2-der {
+            width: auto;
+            line-height: 30px;
+            height: auto;
+            padding-top: 40px;
+        }
+    }
+    .frente-tabla {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #002060;
+        .tabla {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            width: 670px;
+        }
+        table,
+        th,
+        td {
+            border: 1px solid #002060;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 3px;
+        }
+        .td-bordes-f {
+            border-bottom-style: hidden;
+            border-left-style: hidden;
+        }
+        .td-bordes {
+            border-bottom-style: hidden;
+            border-top-style: hidden;
+            border-left-style: hidden;
+        }
+        .td-borde-total {
+            border-collapse: collapse;
+            text-align: center;
+        }
+    }
+    .text {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+        font-size: 16px;
+        color: #002060;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+    }
+    .frenteP-final {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        img {
+            position: absolute;
+            top: -70px;
+            width: 100%;
+        }
+        #logo4 {
+            position: absolute;
+            top: 50px;
+            z-index: 150234;
+            left: 345px;
+            width: 100px;
+        }
+        .final-banner {
+            position: absolute;
+            top: 100px;
+            right: 50px;
+            width: 700px;
+            height: 30px;
+            z-index: 1;
+            background: #444e93;
+            color: #ffff;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 50%;
+            text-align: center;
+        }
+    }
+}
+
+.contrato {
+    height: 1010px;
+    // background: red;
+    .frenteR1 {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        img {
+            position: absolute;
+            top: -70px;
+            width: 100%;
+        }
+        .frenteDatos {
+            position: relative;
+            top: 125px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 700px;
+            height: auto;
+            font-size: 18px;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            .frenteDatos-izq {
+                float: left;
+                width: 50%;
+                height: auto;
+            }
+            .frenteDatos-der {
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+    .frenteDatos-2 {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        height: 30px;
+        width: 700px;
+        top: -12px;
+        z-index: 10;
+        background: #444e93;
+        color: #ffff;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .frente-contrato-1 {
+        font-size: 18px;
+        margin: 40px;
+        .parra {
+            line-height: 35px;
+        }
+        .parra-der {
+            line-height: 30px;
+            text-align: right;
+        }
+    }
+}
+
+.contrato-1 {
+    margin: 40px;
+    height: 1016px;
+    // background: blue;
+    font-size: 17px;
+    .fecha-izq {
+        text-align: right;
+    }
+    .contiene {
+        width: 179px;
+        //background: green;
+        float: left;
+        font-size: 15px;
+        border-left: 1px solid #000000;
+        height: 70px;
+        margin: 3px;
+        padding: 3px;
+        font-style: italic;
+    }
+    .sub {
+        text-decoration: underline;
+    }
+    .parra-titulo {
+        text-align: center;
+    }
+    .contenedor-dis {
+        width: auto;
+        height: 83px;
+        //background: red;
+    }
+}
+
+.contrato-2 {
+    margin: 40px;
+    height: 1016px;
+    // background: blue;
+    font-size: 17px;
+    .sub {
+        text-decoration: underline;
+    }
+}
+
+.conetenido-tabla {
+    position: relative;
+    top: 20px;
+    height: auto;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    h1 {
+        text-align: center;
+    }
+    table {
+        width: 100%;
+        tr {
+            th {
+                background: #ffe699;
+            }
+        }
+        tbody {
+            .bank {
+                background: #c6e0b4;
+            }
+            .mp {
+                background: #ffff00;
+            }
+            .efectivo {
+                //background: transparent;
+            }
+            tr:nth-of-type(even) {
+                background: #f3f3f3;
+            }
+            tr:nth-of-type(odd) {
+                background: #ffffff;
+            }
+        }
+    }
+    table,
+    th,
+    td {
+        font-size: 15px;
+        border: 1px solid #000;
+        border-collapse: collapse;
+        padding: 2px;
+    }
+}

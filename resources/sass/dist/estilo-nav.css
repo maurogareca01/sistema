@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "ProDisplay";
+  font-display: block;
+  src: url("../fuente/ProDisplay.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background: #222222;
+}
+
+body {
+  font-family: ProDisplay;
+  height: 100%;
+  background: #222222;
+}
+
+.subTitulo {
+  padding: 15px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 80px;
+  color: #ffffff;
+  font-size: 20px;
+  background: #222222;
+}
+
+main {
+  height: 100%;
+  background: #222222;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+}
+header .header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background: #2a2e57;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header #usuario {
+  position: absolute;
+  left: 0;
+  width: 150px;
+  color: #ffffff;
+  text-align: right;
+}
+header .header #h1 {
+  width: 33%;
+  text-align: center;
+  color: #ffffff;
+}
+header .header #login {
+  position: absolute;
+  right: 0;
+  width: 150px;
+  color: #ffffff;
+}
+header .sidebar {
+  position: fixed;
+  top: 80px;
+  left: -25%;
+  width: 25%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  transition: 0.5s;
+  z-index: 999999;
+}
+header .sidebar.active {
+  left: 0;
+}
+header .toggle {
+  position: absolute;
+  top: 40px;
+  right: -80px;
+  transform: translateY(-50%);
+  right: -80px;
+  width: 80px;
+  height: 80px;
+  background: #55acee;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .toggle:before {
+  content: "";
+  position: relative;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  border-top: 4px solid #ffffff;
+  border-right: 4px solid #ffffff;
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+header .sidebar.active .toggle:before {
+  transform: rotate(225deg);
+  left: 10px;
+}
+header ul {
+  position: relative;
+  left: -30px;
+  top: 100px;
+  transition: 0.5s;
+  padding: 40px;
+}
+header ul li {
+  list-style: none;
+  line-height: 40px;
+}
+header ul li a {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 38px;
+  text-decoration: none;
+  padding: 0 20px;
+  z-index: 2;
+  transition: 0.5s;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+header ul li a:hover {
+  letter-spacing: 1px;
+  transform: translateX(20px);
+}
+header ul li a:before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: #009bdb;
+  z-index: -1;
+  transform: scale(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+header ul li a:hover:before {
+  transform: scale(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+header ul li {
+  cursor: pointer;
+}
+header ul li ul {
+  display: none;
+  height: auto;
+  padding: 0;
+}
+header ul li ul li a {
+  font-size: 30px;
+  left: 40%;
+  transition: 0.5s;
+}
+header ul li:hover > ul {
+  display: block;
+  width: 280px;
+}

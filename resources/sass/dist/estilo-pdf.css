@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  border: 2px solid #000000;
+  border-radius: 25px;
+}
+.content .frente {
+  width: 100%;
+  height: 200px;
+  padding: 5px;
+}
+.content .frente .info {
+  width: 70%;
+  height: 160px;
+  border: 2px solid #000000;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 4px;
+}
+.content .frente .info .logo {
+  width: 130px;
+  height: 130px;
+  background: red;
+  float: left;
+}
+.content .frente .info .datos {
+  padding-left: 20px;
+  line-height: 21px;
+  font-size: 20px;
+}
+.content .frente .remito {
+  position: absolute;
+  right: 11px;
+  top: 17px;
+  padding: 10px;
+  margin: 4px;
+  width: 170px;
+  height: 160px;
+  border-radius: 25px;
+  border: 2px solid #000000;
+}
+.content .frente .remito p {
+  font-size: 20px;
+}
+.content .frente2 {
+  width: 100%;
+  height: 180px;
+  margin: 8px;
+  border: 2px solid #000000;
+  border-radius: 25px;
+}
+.content .frente2 .frente2-izq {
+  float: left;
+  width: 50%;
+  height: auto;
+  padding-left: 35px;
+  font-size: 20px;
+  padding-top: 20px;
+  line-height: 30px;
+}
+.content .frente2 .frente2-der {
+  width: auto;
+  line-height: 30px;
+  height: auto;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.content .tabla {
+  width: 100%;
+  height: 300px;
+  margin: 8px;
+  border: 2px solid #000000;
+  border-radius: 25px;
+}
+.content .tabla table {
+  margin: 18px;
+  width: 100%;
+  padding: 5px;
+}
+.content .tabla table,
+.content .tabla th,
+.content .tabla td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 17px;
+  padding: 5px;
+}
+.content .frente3 {
+  width: 100%;
+  height: 160px;
+  margin: 8px;
+  border: 2px solid #000000;
+  border-radius: 25px;
+}
+.content .frente3 .recibe {
+  margin: 25px;
+}
+.content .frente3 .firma {
+  text-align: center;
+}
+.content .frente4 {
+  width: 100%;
+  height: 160px;
+  margin: 8px;
+  border: 2px solid #000000;
+  border-radius: 25px;
+}
+.content .frente4 p {
+  margin: 15px;
+}
+
+.presupuesto {
+  width: 100%;
+  height: 1050px;
+  margin: 10px;
+}
+.presupuesto .frenteP {
+  position: absolute;
+  left: 70px;
+  top: 10px;
+  width: 600px;
+  height: 800px;
+  border: 2px solid #000000;
+  margin: 5px;
+  border-radius: 25px;
+}
+.presupuesto .frenteP .docu {
+  float: left;
+  width: 270px;
+}
+.presupuesto .frenteP .docu p {
+  padding-top: 20px;
+  padding-left: 27px;
+}
+.presupuesto .frenteP .x {
+  text-align: center;
+  margin-top: 20px;
+  float: left;
+  padding: 5px;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 3px;
+}
+.presupuesto .frenteP .presu {
+  text-align: center;
+  padding: 5px;
+  margin: 3px;
+}
+.presupuesto .frenteP .presu p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.presupuesto .frenteP2 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 540px;
+  height: 120px;
+  padding-top: 15px;
+  padding-left: 15px;
+  font-size: 20px;
+}
+.presupuesto .frente-tabla {
+  position: absolute;
+  left: 100px;
+  width: 483px;
+  height: 120px;
+  font-size: 20px;
+  top: 250px;
+}
+.presupuesto .frente-tabla table {
+  width: 100%;
+  padding: 5px;
+}
+.presupuesto .frente-tabla table,
+.presupuesto .frente-tabla th,
+.presupuesto .frente-tabla td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 17px;
+  padding: 2px;
+}
+.presupuesto .frente-tabla td:nth-child(4) {
+  width: 50px;
+  text-align: center;
+}
+.presupuesto .frente-tabla td:nth-child(1) {
+  width: 50px;
+}
+.presupuesto .frente-tabla td:nth-child(3) {
+  width: 50px;
+}

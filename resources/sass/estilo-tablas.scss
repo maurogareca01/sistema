@@ -1,0 +1,448 @@
+.tablas {
+    //background: red;
+    width: 100%;
+    .titulo-dispo {
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+    }
+    .desglose {
+        display: flex;
+    }
+    .content {
+        .tabla-garantiaActiva {
+            background-color: #cf4429;
+        }
+        .tabla-reposicion {
+            background-color: #28a745;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            //z-index: 15;
+            border-radius: 25px 25px 0 0;
+            border-collapse: collapse;
+            font-size: 0.9em;
+            position: relative;
+            background-color: #009879;
+            thead {
+                tr {
+                    color: #ffffff;
+                    text-align: center;
+                    th {
+                        padding: 10px 10px;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    border-bottom: 1px solid #dddddd;
+                    td {
+                        padding: 10px 10px;
+                        text-align: center;
+                        color: #000000;
+                        font-size: 15px;
+                        width: 85px;
+                        button {
+                            width: 100%;
+                            cursor: pointer;
+                        }
+                        .btn-color {
+                            font-weight: bold;
+                            color: #000000;
+                            font-family: ProDisplay;
+                            font-size: 16px;
+                            border: 0;
+                            background: transparent;
+                            outline: none;
+                            padding: 0;
+                        }
+                        //icocnos de admincambios//
+                        .fa-check {
+                            color: #28a745;
+                        }
+                        .fa-times {
+                            color: rgb(160, 31, 31);
+                        }
+                        .fa-ban {
+                            color: #1f53c5;
+                        }
+                        //estilos de form de alquiles vencido comentarios
+                        h1 {
+                            color: #000;
+                            text-align: left;
+                        }
+                        label {
+                            display: flex;
+                        }
+                    }
+                    .ajusterTxt {
+                        word-break: break-all;
+                        padding: 0;
+                    }
+                    .NoDisponible {
+                        background: #d14529;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    .Disponible {
+                        background: #28a745;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    .vencido {
+                        font-weight: bold;
+                        color: #000000;
+                        background: #d14529;
+                    }
+                    .espera {
+                        font-weight: bold;
+                        background: #ce915b;
+                    }
+                    .entrega {
+                        font-weight: bold;
+                        background: #f8ef6e;
+                    }
+                    .entregado {
+                        background: #28a745;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    .retirar {
+                        background: #d14529;
+                        color: #000000;
+                        font-weight: bold;
+                    }
+                    .retirado {
+                        font-weight: bold;
+                        background: #55acee;
+                    }
+                    .archivado {
+                        color: #ffffff;
+                        font-weight: bold;
+                        background: #be60a6;
+                    }
+                }
+                tr:nth-of-type(even) {
+                    background: #f3f3f3;
+                }
+                tr:nth-of-type(odd) {
+                    background: #ffffff;
+                }
+                tr:last-of-type {
+                    border-bottom: 2px solid #009879;
+                }
+                tr:hover {
+                    background: #55acee;
+                    td {
+                        color: #ffff;
+                    }
+                }
+            }
+            .ajustes {
+                width: 130px;
+            }
+        }
+        .btn-add {
+            font-size: 40px;
+            color: #ffff;
+            cursor: pointer;
+            border: 0;
+            background: transparent;
+            outline: none;
+        }
+        .btn-add:hover {
+            color: #2a2e57;
+        }
+        .btn-update {
+            color: #393939;
+            border: 0;
+            background: transparent;
+            padding: 0;
+            font-size: 20px;
+            outline: none;
+        }
+        .btn-update:hover {
+            color: #ffff;
+        }
+        .btn-delete {
+            color: #cf4429;
+            border: 0;
+            background: transparent;
+            outline: none;
+            font-size: 20px;
+            padding: 0;
+        }
+        .btn-delete:hover {
+            color: #ffff;
+        }
+        .btn-comenta {
+            color: #393939;
+            border: 0;
+            background: transparent;
+            outline: none;
+            font-size: 25px;
+            padding: 0;
+            cursor: pointer;
+        }
+        .btn-comenta:hover {
+            color: #ffff;
+        }
+    }
+}
+
+.content-paginacion {
+    // background: blue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    .content-ant-sig {
+        background: #2f3640;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        border: 2px solid #009879;
+        border-radius: 25px;
+        .ant-sig {
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            // background: green;
+            text-decoration: none;
+            font-family: ProDisplay;
+            font-size: 20px;
+            color: #e84118;
+        }
+        .ant-sig:hover {
+            color: #ffff;
+        }
+        .content-numeros {
+            padding: 3px;
+            //  background: pink;
+            .link-num {
+                padding: 5px;
+                text-decoration: none;
+                font-family: ProDisplay;
+                font-size: 20px;
+                color: #ffff;
+                text-align: center;
+            }
+            .link-num:hover {
+                color: #e84118;
+            }
+        }
+    }
+}
+
+//ESTILOS DE LA ALERTA DE LOS BOTONES DE LAS TABLAS DE LA TABAL PEDIDOS Y SECIION DE INVENTARIO BOTONES DE VER TEXTOS
+.swal2-content,
+.swal2-header {
+    padding: 0 !important;
+    .swal2-title {
+        display: unset !important;
+    }
+}
+
+.verCliente {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    p {
+        font-size: 30px;
+        font-family: ProDisplay;
+        color: #000000;
+    }
+}
+
+///////////ESTILOS DE LOS CAMBIOS DE ESTADOS DE SWEETALERT////////////////
+.btn-revisar,
+.btn-espera {
+    border: none;
+    border-radius: .25em;
+    background: initial;
+    background-color: #f8ef6e;
+    color: #000000;
+    font-size: 1.0625em;
+    margin: .3125em;
+    padding: .625em 1.1em;
+    box-shadow: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-cancelar {
+    border: none;
+    border-radius: .25em;
+    background: initial;
+    background-color: #2a2e57;
+    color: #ffffff;
+    font-size: 1.0625em;
+    margin: .3125em;
+    padding: .625em 1.1em;
+    box-shadow: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-disponible,
+.btn-entregado {
+    border: none;
+    border-radius: .25em;
+    background: initial;
+    background-color: #28a745;
+    color: #ffffff;
+    font-size: 1.0625em;
+    margin: .3125em;
+    padding: .625em 1.1em;
+    box-shadow: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-retirar {
+    border: none;
+    border-radius: .25em;
+    background: initial;
+    background-color: #d14529;
+    color: #ffffff;
+    font-size: 1.0625em;
+    margin: .3125em;
+    padding: .625em 1.1em;
+    box-shadow: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-retirarado {
+    border: none;
+    border-radius: .25em;
+    background: initial;
+    background-color: #55acee;
+    color: #ffffff;
+    font-size: 1.0625em;
+    margin: .3125em;
+    padding: .625em 1.1em;
+    box-shadow: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-archivado {
+    border: none;
+    border-radius: .25em;
+    background: initial;
+    background-color: #be60a6;
+    color: #ffffff;
+    font-size: 1.0625em;
+    margin: .3125em;
+    padding: .625em 1.1em;
+    box-shadow: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+}
+
+.scal:hover {
+    transform: scale(1.1)
+}
+
+////////////////////////////////////RESPONSIVE/////////////////////////////////////////////
+////// 
+/////// 
+@media only screen and (max-width: 479px) {
+    .tablas {
+        .content {
+            width: auto;
+            overflow-x: auto;
+            table {
+                table-layout: fixed;
+                tbody {
+                    tr {
+                        td {
+                            //estilos de form de alquiles vencido comentarios
+                            h1 {
+                                color: #000;
+                                text-align: left;
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .verCliente {
+        p {
+            font-size: 22px;
+        }
+    }
+}
+
+////// 
+/////// 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .tablas {
+        .content {
+            width: auto;
+            overflow-x: auto;
+            table {
+                tbody {
+                    tr {
+                        td {
+                            //estilos de form de alquiles vencido comentarios
+                            h1 {
+                                color: #000;
+                                text-align: left;
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .tablas {
+        .content {
+            width: auto;
+            overflow-x: auto;
+            table {
+                tbody {
+                    tr {
+                        td {
+                            //estilos de form de alquiles vencido comentarios
+                            h1 {
+                                color: #000;
+                                text-align: left;
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .tablas {
+        .content {
+            width: auto;
+            overflow-x: auto;
+        }
+    }
+}

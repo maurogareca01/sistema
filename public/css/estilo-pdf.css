@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.remito {
+  width: 100%;
+  height: 1050px;
+}
+.remito .frenteR1 {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.remito .frenteR1 img {
+  position: absolute;
+  top: -70px;
+  width: 100%;
+}
+.remito .frenteR1 #logo1 {
+  position: absolute;
+  top: 40px;
+  left: 295px;
+  width: 200px;
+}
+.remito .frenteR1 .frenteDatos {
+  position: relative;
+  top: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: auto;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.remito .frenteR1 .frenteDatos .frenteDatos-izq {
+  float: left;
+  width: 50%;
+  height: auto;
+}
+.remito .frenteR1 .frenteDatos .frenteDatos-der {
+  width: auto;
+  height: auto;
+}
+.remito .frenteDatos-2 {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 30px;
+  top: -12px;
+  z-index: 10;
+  background: #444e93;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+}
+.remito .frenteDatos-3 {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: auto;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+}
+.remito .frenteDatos-3 .frenteDatos-3-izq {
+  float: left;
+  width: 50%;
+  text-align: left;
+  height: auto;
+}
+.remito .frenteDatos-3 .frenteDatos-3-der {
+  width: auto;
+  text-align: right;
+  height: auto;
+}
+.remito .frenteDatos-4 {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 80px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+.remito .frenteDatos-4 .frenteDatos-4-izq {
+  float: left;
+  width: 50%;
+  text-align: left;
+  height: auto;
+}
+.remito .frenteDatos-4 .frenteDatos-4-der {
+  width: auto;
+  text-align: left;
+  height: auto;
+}
+.remito .frente-tabla {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  font-size: 14px;
+}
+.remito .frente-tabla .tabla {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+.remito .frente-tabla table,
+.remito .frente-tabla th,
+.remito .frente-tabla td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 3px;
+}
+.remito .frenteDatos-5 {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 60px;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+}
+.remito .frenteDatos-5 .frenteDatos-5-izq {
+  float: left;
+  text-align: left;
+}
+.remito .frenteDatos-5 .frenteDatos-5-der {
+  text-align: right;
+}
+.remito .frenteDatos-5 #logo2 {
+  position: absolute;
+  bottom: 0px;
+  left: 240px;
+  width: 100px;
+}
+
+.presupuesto {
+  width: 100%;
+  height: 1050px;
+}
+.presupuesto .frenteP {
+  z-index: 12;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.presupuesto .frenteP img {
+  top: -70px;
+  width: 100%;
+}
+.presupuesto .frenteP #logo3 {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  width: 250px;
+}
+.presupuesto .frenteP .caja-presu {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  width: 260px;
+  height: auto;
+  z-index: 1;
+  background: #444e93;
+  color: #ffff;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+}
+.presupuesto .frenteP2 {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 170px;
+  font-size: 14px;
+  color: #002060;
+  font-weight: bold;
+}
+.presupuesto .frenteP2 .frenteP2-izq {
+  float: left;
+  width: 50%;
+  height: auto;
+  padding-left: 35px;
+  padding-top: 40px;
+  line-height: 30px;
+}
+.presupuesto .frenteP2 .frenteP2-der {
+  width: auto;
+  line-height: 30px;
+  height: auto;
+  padding-top: 40px;
+}
+.presupuesto .frente-tabla {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #002060;
+}
+.presupuesto .frente-tabla .tabla {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 670px;
+}
+.presupuesto .frente-tabla table,
+.presupuesto .frente-tabla th,
+.presupuesto .frente-tabla td {
+  border: 1px solid #002060;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 3px;
+}
+.presupuesto .frente-tabla .td-bordes-f {
+  border-bottom-style: hidden;
+  border-left-style: hidden;
+}
+.presupuesto .frente-tabla .td-bordes {
+  border-bottom-style: hidden;
+  border-top-style: hidden;
+  border-left-style: hidden;
+}
+.presupuesto .frente-tabla .td-borde-total {
+  border-collapse: collapse;
+  text-align: center;
+}
+.presupuesto .text {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  font-size: 16px;
+  color: #002060;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+.presupuesto .frenteP-final {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.presupuesto .frenteP-final img {
+  position: absolute;
+  top: -70px;
+  width: 100%;
+}
+.presupuesto .frenteP-final #logo4 {
+  position: absolute;
+  top: 50px;
+  z-index: 150234;
+  left: 345px;
+  width: 100px;
+}
+.presupuesto .frenteP-final .final-banner {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  width: 700px;
+  height: 30px;
+  z-index: 1;
+  background: #444e93;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.contrato {
+  height: 1010px;
+}
+.contrato .frenteR1 {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.contrato .frenteR1 img {
+  position: absolute;
+  top: -70px;
+  width: 100%;
+}
+.contrato .frenteR1 .frenteDatos {
+  position: relative;
+  top: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: auto;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.contrato .frenteR1 .frenteDatos .frenteDatos-izq {
+  float: left;
+  width: 50%;
+  height: auto;
+}
+.contrato .frenteR1 .frenteDatos .frenteDatos-der {
+  width: auto;
+  height: auto;
+}
+.contrato .frenteDatos-2 {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  width: 700px;
+  top: -12px;
+  z-index: 10;
+  background: #444e93;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+}
+.contrato .frente-contrato-1 {
+  font-size: 18px;
+  margin: 40px;
+}
+.contrato .frente-contrato-1 .parra {
+  line-height: 35px;
+}
+.contrato .frente-contrato-1 .parra-der {
+  line-height: 30px;
+  text-align: right;
+}
+
+.contrato-1 {
+  margin: 40px;
+  height: 1016px;
+  font-size: 17px;
+}
+.contrato-1 .fecha-izq {
+  text-align: right;
+}
+.contrato-1 .contiene {
+  width: 179px;
+  float: left;
+  font-size: 15px;
+  border-left: 1px solid #000000;
+  height: 70px;
+  margin: 3px;
+  padding: 3px;
+  font-style: italic;
+}
+.contrato-1 .sub {
+  text-decoration: underline;
+}
+.contrato-1 .parra-titulo {
+  text-align: center;
+}
+.contrato-1 .contenedor-dis {
+  width: auto;
+  height: 83px;
+}
+
+.contrato-2 {
+  margin: 40px;
+  height: 1016px;
+  font-size: 17px;
+}
+.contrato-2 .sub {
+  text-decoration: underline;
+}
+
+.conetenido-tabla {
+  position: relative;
+  top: 20px;
+  height: auto;
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.conetenido-tabla h1 {
+  text-align: center;
+}
+.conetenido-tabla table {
+  width: 100%;
+}
+.conetenido-tabla table tr th {
+  background: #ffe699;
+}
+.conetenido-tabla table tbody .bank {
+  background: #c6e0b4;
+}
+.conetenido-tabla table tbody .mp {
+  background: #ffff00;
+}
+.conetenido-tabla table tbody tr:nth-of-type(even) {
+  background: #f3f3f3;
+}
+.conetenido-tabla table tbody tr:nth-of-type(odd) {
+  background: #ffffff;
+}
+.conetenido-tabla table,
+.conetenido-tabla th,
+.conetenido-tabla td {
+  font-size: 15px;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 2px;
+}
+
+/*# sourceMappingURL=estilo-pdf.css.map */

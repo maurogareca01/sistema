@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "ProDisplay";
+  font-display: block;
+  src: url("../fuente/ProDisplay.ttf");
+}
+.inven-tablas {
+  width: 100%;
+  padding: 15px;
+}
+.inven-tablas .sopala-inventario {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.inven-tablas .sopala-inventario .inventario ul.inven {
+  width: 100%;
+  display: flex;
+}
+.inven-tablas .sopala-inventario .inventario ul.inven .active {
+  background: #009879;
+}
+.inven-tablas .sopala-inventario .inventario ul.inven li {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  cursor: pointer;
+  line-height: 20px;
+  font-family: "ProDisplay";
+  width: 200px;
+  border-radius: 25px 0;
+  text-align: center;
+  margin: 5px;
+}
+.inven-tablas .sopala-inventario .inventario ul.inven li a {
+  width: 200px;
+  padding: 20px 0px;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #009879;
+  border-radius: 25px 0;
+}
+.inven-tablas .sopala-inventario .inventario ul.inven li:hover {
+  background: #009879;
+}
+.inven-tablas .sopala-inventario .cartelGaran {
+  width: auto;
+}
+.inven-tablas .sopala-inventario .cartelGaran button {
+  border: 1px solid #009879;
+  outline: none;
+  margin: 5px;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  width: 100%;
+  padding: 20px 0px;
+  border-radius: 25px 0;
+  color: #ffffff;
+  padding: 20px 0px;
+  cursor: pointer;
+  background: transparent;
+  font-family: "ProDisplay";
+}
+.inven-tablas .sopala-inventario .cartelGaran button:hover {
+  background: #009879;
+}
+
+.content-input {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.content-input .input {
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 40px;
+  background: #f5f5f5;
+}
+.content-input .input .search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  text-align: center;
+  padding: 0;
+  color: #000000;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+.content-input .search-btn {
+  color: #e84118;
+  background: #2f3640;
+  float: right;
+  width: 80px;
+  height: 40px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #009879;
+}
+
+.input:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.input:hover > .search-btn {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 479px) {
+  .inven-tablas .sopala-inventario {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .inven-tablas .sopala-inventario .inventario ul.inven {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .inven-tablas .sopala-inventario .inventario ul.inven li {
+    width: calc( 150px + 20vw);
+  }
+  .inven-tablas .sopala-inventario .inventario ul.inven li a {
+    width: calc(150px + 20vw);
+    padding: 15px 0px;
+    font-size: 20px;
+  }
+  .inven-tablas .sopala-inventario .cartelGaran button {
+    padding: 15px 0px;
+    width: calc( 150px + 20vw);
+    font-size: calc( 15px + 1vw);
+  }
+
+  .content-input .input .search-txt {
+    width: calc( 110px + 20vw);
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .inven-tablas .sopala-inventario .inventario ul.inven li {
+    width: calc( 10px + 20vw);
+  }
+  .inven-tablas .sopala-inventario .inventario ul.inven li a {
+    width: calc(10px + 20vw);
+    padding: 15px 0px;
+    font-size: 19px;
+  }
+  .inven-tablas .sopala-inventario .cartelGaran button {
+    padding: 15px 0px;
+    width: calc( 10px + 20vw);
+    font-size: calc( 10px + 1vw);
+  }
+
+  .content-input .input .search-txt {
+    width: 240px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-device-width: 1023px) {
+  .content-input .input .search-txt {
+    width: 240px;
+  }
+
+  .inven-tablas .sopala-inventario .inventario ul.inven li {
+    width: calc( 10px + 20vw);
+  }
+  .inven-tablas .sopala-inventario .inventario ul.inven li a {
+    width: calc(14px + 20vw);
+    padding: 15px 0px;
+    font-size: 22px;
+  }
+  .inven-tablas .sopala-inventario .cartelGaran button {
+    padding: 15px 0px;
+    width: calc( 10px + 20vw);
+    font-size: calc( 10px + 1vw);
+  }
+}
+
+/*# sourceMappingURL=estilo-inventario.css.map */

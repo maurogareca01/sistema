@@ -1,0 +1,290 @@
+////ADMINCALENDARIO
+#calendar {
+    max-width: 86%;
+    height: auto;
+    font-family: sans-serif;
+    background: #f3f3f3;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.fc-toolbar-title {
+    text-transform: uppercase;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+    background: rgba(0, 120, 215, 0.8) !important;
+    .fc-daygrid-day-top {
+        color: white !important;
+    }
+}
+
+.fc-daygrid-da {
+    height: 500px!important;
+}
+
+.fc-daygrid-day-number {
+    font-size: 16px;
+}
+
+.fc-daygrid-event {
+    border-radius: 20px !important;
+    font-size: 13px !important;
+    .fc-sticky {
+        font-weight: bold !important;
+        padding-left: 15px !important;
+        font-family: sans-serif !important;
+    }
+    /*
+    .fc-event-time {
+        font-weight: normal !important;
+        display: flex;
+        align-items: center !important;
+        padding-left: 5px !important;
+    }*/
+}
+
+.fc-daygrid-event:hover {
+    cursor: pointer;
+}
+
+.fc .fc-more-popover .fc-popover-body {
+    padding: 20px!important;
+    width: 300px;
+}
+
+.fc-popover-body .fc-daygrid-event-harness {
+    padding: 3px!important;
+    .fc-daygrid-event {
+        .fc-sticky {
+            font-size: 17px;
+        }
+    }
+}
+
+.fc-daygrid-more-link {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+    background: #009879 !important;
+}
+
+.fc .fc-button-primary {
+    //     border: 2px solid #009879 !important;
+    border: none !important;
+    border-color: #2a2e57 !important;
+    background: #2a2e57 !important;
+}
+
+.fc .fc-button-primary:focus,
+.fc .fc-button-primary:not(:disabled).fc-button-active:focus,
+.fc .fc-button-primary:not(:disabled):active:focus {
+    box-shadow: none !important;
+}
+
+.fecha-input {
+    position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    form {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        input {
+            width: auto;
+            border: 0;
+            height: 40px;
+            font-family: ProDisplay;
+            font-size: 22px;
+            resize: none;
+            border-radius: 10px;
+            padding-left: 20px;
+            margin: 0px 10px;
+        }
+        input:focus {
+            outline: none;
+        }
+        button {
+            border: 0;
+            width: auto;
+            border-radius: 10px;
+            height: 40px;
+            font-size: 22px;
+            resize: none;
+            margin: 0px 10px;
+            font-family: ProDisplay;
+            padding: 0px 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            outline: none;
+        }
+        button:hover {
+            background: #009879;
+            cursor: pointer;
+            color: #fff;
+            transform: scale(1.05);
+        }
+    }
+}
+
+.text-entrega-retiro {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px;
+    font-family: ProDisplay;
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: red;
+}
+
+////////////////////////////////////RESPONSIVE/////////////////////////////////////////////
+////// 
+/////// 
+@media only screen and (max-width: 479px) {
+    #calendar {
+        max-width: 99%;
+        height: 600px;
+        padding: 5px;
+        margin: 0;
+    }
+    .fc .fc-toolbar.fc-header-toolbar {
+        margin-bottom: 1em;
+        margin-top: 10px;
+    }
+    .fc-toolbar-chunk {
+        display: flex;
+        justify-content: center;
+        width: calc(100px + 5vw)!important;
+        font-size: 12px !important;
+        .fc-button-group {
+            button {
+                font-size: 12px;
+                .fc-dayGridMonth-button,
+                .fc-timeGridDay-button,
+                .fc-timeGridWeek-button {
+                    width: calc(25px + 2vw)!important;
+                    font-size: 11px !important;
+                }
+            }
+        }
+    }
+    .fc .fc-button {
+        margin: 0;
+        padding: 2px;
+    }
+    .fc-toolbar-title {
+        font-size: 14px !important;
+    }
+    .fc-col-header-cell-cushion {
+        font-size: 12px !important;
+    }
+    .fc-daygrid-day-number {
+        font-size: 11.5px;
+    }
+    .fc-daygrid-event {
+        border-radius: 20px !important;
+        font-size: 9px !important;
+        .fc-sticky {
+            padding-left: 3px !important;
+        }
+    }
+    .fc-daygrid-more-link {
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .fecha-input {
+        position: relative;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        form {
+            display: initial;
+            justify-content: initial;
+            input {
+                width: 70%;
+                position: relative;
+                left: calc(50% - 35%);
+                height: 40px;
+                margin: 5px 0px;
+                font-size: calc(18px + 1vw);
+            }
+            button {
+                width: 80%;
+                height: 40px;
+                font-size: calc(15px + 1vw);
+                margin: 5px 0px;
+                padding: 0px 10px;
+                position: relative;
+                left: calc(50% - 40%);
+            }
+        }
+    }
+    .text-entrega-retiro {
+        font-size: calc(20px + 1vw);
+        color: red;
+    }
+}
+
+////// 
+/////// 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #calendar {
+        height: 800px;
+    }
+    .fc-daygrid-day-number {
+        font-size: 14px;
+    }
+    .fc-daygrid-event {
+        font-size: 11px !important;
+        .fc-sticky {
+            padding-left: 5px !important;
+        }
+    }
+    .fc-toolbar-title {
+        font-size: 20px !important;
+    }
+    .fc-col-header {
+        font-size: 13px !important;
+    }
+    .fecha-input {
+        position: relative;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        form {
+            display: initial;
+            justify-content: initial;
+            input {
+                width: 70%;
+                position: relative;
+                left: calc(50% - 35%);
+                height: 40px;
+                margin: 5px 0px;
+                font-size: calc(18px + 1vw);
+            }
+            button {
+                width: 80%;
+                height: 40px;
+                font-size: calc(15px + 1vw);
+                margin: 5px 0px;
+                padding: 0px 10px;
+                position: relative;
+                left: calc(50% - 40%);
+            }
+        }
+    }
+    .text-entrega-retiro {
+        font-size: calc(20px + 1vw);
+        color: red;
+    }
+}

@@ -1,0 +1,394 @@
+.tablas {
+  width: 100%;
+}
+.tablas .titulo-dispo {
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+.tablas .desglose {
+  display: flex;
+}
+.tablas .content .tabla-garantiaActiva {
+  background-color: #cf4429;
+}
+.tablas .content .tabla-reposicion {
+  background-color: #28a745;
+}
+.tablas .content table {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px 25px 0 0;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  position: relative;
+  background-color: #009879;
+}
+.tablas .content table thead tr {
+  color: #ffffff;
+  text-align: center;
+}
+.tablas .content table thead tr th {
+  padding: 10px 10px;
+}
+.tablas .content table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+.tablas .content table tbody tr td {
+  padding: 10px 10px;
+  text-align: center;
+  color: #000000;
+  font-size: 15px;
+  width: 85px;
+}
+.tablas .content table tbody tr td button {
+  width: 100%;
+  cursor: pointer;
+}
+.tablas .content table tbody tr td .btn-color {
+  font-weight: bold;
+  color: #000000;
+  font-family: ProDisplay;
+  font-size: 16px;
+  border: 0;
+  background: transparent;
+  outline: none;
+  padding: 0;
+}
+.tablas .content table tbody tr td .fa-check {
+  color: #28a745;
+}
+.tablas .content table tbody tr td .fa-times {
+  color: #a01f1f;
+}
+.tablas .content table tbody tr td .fa-ban {
+  color: #1f53c5;
+}
+.tablas .content table tbody tr td h1 {
+  color: #000;
+  text-align: left;
+}
+.tablas .content table tbody tr td label {
+  display: flex;
+}
+.tablas .content table tbody tr .ajusterTxt {
+  word-break: break-all;
+  padding: 0;
+}
+.tablas .content table tbody tr .NoDisponible {
+  background: #d14529;
+  color: white;
+  font-weight: bold;
+}
+.tablas .content table tbody tr .Disponible {
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+}
+.tablas .content table tbody tr .vencido {
+  font-weight: bold;
+  color: #000000;
+  background: #d14529;
+}
+.tablas .content table tbody tr .espera {
+  font-weight: bold;
+  background: #ce915b;
+}
+.tablas .content table tbody tr .entrega {
+  font-weight: bold;
+  background: #f8ef6e;
+}
+.tablas .content table tbody tr .entregado {
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+}
+.tablas .content table tbody tr .retirar {
+  background: #d14529;
+  color: #000000;
+  font-weight: bold;
+}
+.tablas .content table tbody tr .retirado {
+  font-weight: bold;
+  background: #55acee;
+}
+.tablas .content table tbody tr .archivado {
+  color: #ffffff;
+  font-weight: bold;
+  background: #be60a6;
+}
+.tablas .content table tbody tr:nth-of-type(even) {
+  background: #f3f3f3;
+}
+.tablas .content table tbody tr:nth-of-type(odd) {
+  background: #ffffff;
+}
+.tablas .content table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+.tablas .content table tbody tr:hover {
+  background: #55acee;
+}
+.tablas .content table tbody tr:hover td {
+  color: #ffff;
+}
+.tablas .content table .ajustes {
+  width: 130px;
+}
+.tablas .content .btn-add {
+  font-size: 40px;
+  color: #ffff;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  outline: none;
+}
+.tablas .content .btn-add:hover {
+  color: #2a2e57;
+}
+.tablas .content .btn-update {
+  color: #393939;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font-size: 20px;
+  outline: none;
+}
+.tablas .content .btn-update:hover {
+  color: #ffff;
+}
+.tablas .content .btn-delete {
+  color: #cf4429;
+  border: 0;
+  background: transparent;
+  outline: none;
+  font-size: 20px;
+  padding: 0;
+}
+.tablas .content .btn-delete:hover {
+  color: #ffff;
+}
+.tablas .content .btn-comenta {
+  color: #393939;
+  border: 0;
+  background: transparent;
+  outline: none;
+  font-size: 25px;
+  padding: 0;
+  cursor: pointer;
+}
+.tablas .content .btn-comenta:hover {
+  color: #ffff;
+}
+
+.content-paginacion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.content-paginacion .content-ant-sig {
+  background: #2f3640;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 2px solid #009879;
+  border-radius: 25px;
+}
+.content-paginacion .content-ant-sig .ant-sig {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: ProDisplay;
+  font-size: 20px;
+  color: #e84118;
+}
+.content-paginacion .content-ant-sig .ant-sig:hover {
+  color: #ffff;
+}
+.content-paginacion .content-ant-sig .content-numeros {
+  padding: 3px;
+}
+.content-paginacion .content-ant-sig .content-numeros .link-num {
+  padding: 5px;
+  text-decoration: none;
+  font-family: ProDisplay;
+  font-size: 20px;
+  color: #ffff;
+  text-align: center;
+}
+.content-paginacion .content-ant-sig .content-numeros .link-num:hover {
+  color: #e84118;
+}
+
+.swal2-content,
+.swal2-header {
+  padding: 0 !important;
+}
+.swal2-content .swal2-title,
+.swal2-header .swal2-title {
+  display: unset !important;
+}
+
+.verCliente {
+  width: 100%;
+  text-align: left;
+  padding: 0;
+}
+.verCliente p {
+  font-size: 30px;
+  font-family: ProDisplay;
+  color: #000000;
+}
+
+.btn-revisar,
+.btn-espera {
+  border: none;
+  border-radius: 0.25em;
+  background: initial;
+  background-color: #f8ef6e;
+  color: #000000;
+  font-size: 1.0625em;
+  margin: 0.3125em;
+  padding: 0.625em 1.1em;
+  box-shadow: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-cancelar {
+  border: none;
+  border-radius: 0.25em;
+  background: initial;
+  background-color: #2a2e57;
+  color: #ffffff;
+  font-size: 1.0625em;
+  margin: 0.3125em;
+  padding: 0.625em 1.1em;
+  box-shadow: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-disponible,
+.btn-entregado {
+  border: none;
+  border-radius: 0.25em;
+  background: initial;
+  background-color: #28a745;
+  color: #ffffff;
+  font-size: 1.0625em;
+  margin: 0.3125em;
+  padding: 0.625em 1.1em;
+  box-shadow: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-retirar {
+  border: none;
+  border-radius: 0.25em;
+  background: initial;
+  background-color: #d14529;
+  color: #ffffff;
+  font-size: 1.0625em;
+  margin: 0.3125em;
+  padding: 0.625em 1.1em;
+  box-shadow: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-retirarado {
+  border: none;
+  border-radius: 0.25em;
+  background: initial;
+  background-color: #55acee;
+  color: #ffffff;
+  font-size: 1.0625em;
+  margin: 0.3125em;
+  padding: 0.625em 1.1em;
+  box-shadow: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-archivado {
+  border: none;
+  border-radius: 0.25em;
+  background: initial;
+  background-color: #be60a6;
+  color: #ffffff;
+  font-size: 1.0625em;
+  margin: 0.3125em;
+  padding: 0.625em 1.1em;
+  box-shadow: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+.scal:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 479px) {
+  .tablas .content {
+    width: auto;
+    overflow-x: auto;
+  }
+  .tablas .content table {
+    table-layout: fixed;
+  }
+  .tablas .content table tbody tr td h1 {
+    color: #000;
+    text-align: left;
+    font-size: 28px;
+  }
+
+  .verCliente p {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .tablas .content {
+    width: auto;
+    overflow-x: auto;
+  }
+  .tablas .content table tbody tr td h1 {
+    color: #000;
+    text-align: left;
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .tablas .content {
+    width: auto;
+    overflow-x: auto;
+  }
+  .tablas .content table tbody tr td h1 {
+    color: #000;
+    text-align: left;
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .tablas .content {
+    width: auto;
+    overflow-x: auto;
+  }
+}
+
+/*# sourceMappingURL=estilo-tablas.css.map */
